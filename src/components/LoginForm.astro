@@ -1,14 +1,12 @@
 ---
-import LogoIcon from '@/components/icons/LogoIcon.astro'
+import { Icons } from './Icons'
 import { buttonVariants } from './Button.astro'
 import { cn } from '@/lib/utils'
-import GitHubIcon from './icons/GitHubIcon.astro'
-import GoogleIcon from './icons/GoogleIcon.astro'
 ---
 
 <div class='flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8'>
   <div class='sm:mx-auto sm:w-full sm:max-w-md'>
-    <LogoIcon styles='mx-auto h-10 w-auto' />
+    <Icons.Logo className='mx-auto h-10 w-auto' />
     <h2 class='mt-6 text-center text-2xl font-bold leading-9 tracking-tight'>Sign in to your account</h2>
   </div>
 
@@ -81,7 +79,7 @@ import GoogleIcon from './icons/GoogleIcon.astro'
               'flex items-center w-full justify-center gap-3 bg-foreground/90 text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/90 hover:bg-foreground/80'
             )}
           >
-            <GoogleIcon />
+            <Icons.Google className='fill-background h-5 w-5' />
           </a>
 
           <form action='/api/auth/login' method='get'>
@@ -95,7 +93,7 @@ import GoogleIcon from './icons/GoogleIcon.astro'
                 'flex itesm-center w-full justify-center gap-3 bg-foreground/90 text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/90 hover:bg-foreground/80'
               )}
             >
-              <GitHubIcon />
+              <Icons.GitHub className='h-5 w-5' />
             </button>
           </form>
         </div>

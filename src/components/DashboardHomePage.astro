@@ -1,35 +1,13 @@
 ---
 import DashboardStaticSidebar from '@/components/DashboardStaticSidebar.astro'
 import { DashboardFlyoutMenu } from './DashboardFlyoutMenu'
-
-// const navigation = [
-//   { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-//   { name: 'Team', href: '#', icon: UsersIcon, current: false },
-//   { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-//   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-//   { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
-//   { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
-// ]
-
-const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Documents', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
-]
-
-const teams = [
-  { id: 1, name: 'Heroicons', href: '#', initial: 'H', current: false },
-  { id: 2, name: 'Tailwind Labs', href: '#', initial: 'T', current: false },
-  { id: 3, name: 'Workcation', href: '#', initial: 'W', current: false },
-]
+import { navigation, teams } from '@/config/dashboard'
+const path = Astro.url.pathname
 ---
 
 <div>
   <DashboardStaticSidebar navigation={navigation} teams={teams} />
-  <DashboardFlyoutMenu client:load />
+  <DashboardFlyoutMenu client:load path={path} />
   <main class='py-10'>
     <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>Hi there</div>
   </main>

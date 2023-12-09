@@ -1,38 +1,11 @@
 import { Fragment } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import {
-  CalendarIcon,
-  ChartPieIcon,
-  Cog6ToothIcon,
-  DocumentDuplicateIcon,
-  FolderIcon,
-  HomeIcon,
-  UsersIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
 import { cn } from '@/lib/utils'
+import { Icons } from './Icons'
+import { navigation, teams } from '@/config/dashboard'
+import type { DashboardFlyoutProps } from '@/types'
 
-const navigation = [
-  { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-  { name: 'Team', href: '#', icon: UsersIcon, current: false },
-  { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-  { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-  { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
-  { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
-]
-
-const teams = [
-  { id: 1, name: 'Heroicons', href: '#', initial: 'H', current: false },
-  { id: 2, name: 'Tailwind Labs', href: '#', initial: 'T', current: false },
-  { id: 3, name: 'Workcation', href: '#', initial: 'W', current: false },
-]
-
-type DashboardFlyoutProps = {
-  sidebarOpen: boolean
-  setSidebarOpen: (open: boolean) => void
-}
-
-export function DashboardFlyout({ sidebarOpen = false, setSidebarOpen }: DashboardFlyoutProps) {
+export function DashboardFlyout({ sidebarOpen = false, setSidebarOpen, path }: DashboardFlyoutProps) {
   return (
     <Transition.Root show={sidebarOpen} as={Fragment}>
       <Dialog as='div' className='relative z-50 lg:hidden' onClose={setSidebarOpen}>
@@ -68,11 +41,11 @@ export function DashboardFlyout({ sidebarOpen = false, setSidebarOpen }: Dashboa
                 <div className='absolute left-full top-0 flex w-16 justify-center pt-5'>
                   <button type='button' className='-m-2.5 p-2.5' onClick={() => setSidebarOpen(false)}>
                     <span className='sr-only'>Close sidebar</span>
-                    <XMarkIcon className='h-6 w-6' aria-hidden='true' />
+                    <Icons.X className='h-6 w-6' aria-hidden='true' />
                   </button>
                 </div>
               </Transition.Child>
-              {/* Sidebar component, swap this element with another sidebar if you like */}
+
               <div className='flex grow flex-col gap-y-5 overflow-y-auto bg-background px-6 pb-4 border-r'>
                 <div className='flex h-16 shrink-0 items-center'>
                   <svg
@@ -98,12 +71,14 @@ export function DashboardFlyout({ sidebarOpen = false, setSidebarOpen }: Dashboa
                             <a
                               href={item.href}
                               className={cn(
-                                item.current ? 'bg-secondary' : 'hover:text-foreground hover:bg-secondary',
+                                path === item.href ? 'bg-secondary' : 'hover:text-foreground hover:bg-secondary',
                                 'group flex gap-x-3 rounded-md p-2 text-sm leading-6'
                               )}>
                               <item.icon
                                 className={cn(
-                                  item.current ? 'text-primary' : 'text-muted-foreground group-hover:text-primary',
+                                  path === item.href
+                                    ? 'text-primary'
+                                    : 'text-muted-foreground group-hover:text-primary',
                                   'h-6 w-6 shrink-0'
                                 )}
                                 aria-hidden='true'
@@ -144,8 +119,8 @@ export function DashboardFlyout({ sidebarOpen = false, setSidebarOpen }: Dashboa
                       <a
                         href='#'
                         className='group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 hover:bg-secondary'>
-                        <Cog6ToothIcon
-                          className='h-6 w-6 shrink-0 text-gray-400 group-hover:text-primary'
+                        <Icons.Settings
+                          className='h-6 w-6 shrink-0 text-muted-foreground group-hover:text-primary'
                           aria-hidden='true'
                         />
                         Settings

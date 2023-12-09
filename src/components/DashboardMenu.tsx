@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Icons } from './Icons'
 import { cn } from '@/lib/utils'
 
 const userNavigation = [
@@ -22,7 +22,7 @@ export function DashboardMenu() {
           <span className='ml-4 text-sm font-semibold leading-6' aria-hidden='true'>
             Tom Cook
           </span>
-          <ChevronDownIcon className='ml-2 h-5 w-5 text-muted-foreground' aria-hidden='true' />
+          <Icons.ChevronDown className='ml-2 h-5 w-5 text-muted-foreground' aria-hidden='true' />
         </span>
       </Menu.Button>
       <Transition

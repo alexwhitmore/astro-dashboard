@@ -1,6 +1,7 @@
 ---
-import Layout from '@/layouts/Layout.astro'
-import DashboardHomePage from '@/components/DashboardHomePage.astro'
+import Layout from '../../layouts/Layout.astro'
+import DashboardHomePage from '../../components/DashboardHomePage.astro'
+
 const { cookies, redirect } = Astro
 const accessToken = cookies.get('sb-access-token')
 const refreshToken = cookies.get('sb-refresh-token')
@@ -10,6 +11,6 @@ if (!accessToken && !refreshToken) {
 }
 ---
 
-<Layout title='Dashboard'>
+<Layout title='Dashboard | Teams'>
   <DashboardHomePage />
 </Layout>
