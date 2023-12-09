@@ -1,0 +1,16 @@
+---
+import Layout from '@/layouts/Layout.astro'
+import DashboardHomePage from '@/components/DashboardHomePage.astro'
+// import { DashboardHome } from '@/components/DashboardHome'
+const { cookies, redirect } = Astro
+const accessToken = cookies.get('sb-access-token')
+const refreshToken = cookies.get('sb-refresh-token')
+
+if (!accessToken && !refreshToken) {
+  return redirect('/login')
+}
+---
+
+<Layout title='Dashboard'>
+  <DashboardHomePage />
+</Layout>

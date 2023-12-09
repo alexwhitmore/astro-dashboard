@@ -1,0 +1,21 @@
+---
+const { variant = 'default' } = Astro.props
+import { cva } from 'class-variance-authority'
+import { cn } from '@/lib/utils'
+
+export const buttonVariants = cva(
+  'rounded-md px-3 py-2 text-sm text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary hover:bg-primary/80 focus-visible:outline-primary',
+        secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80 focus-visible:outline-secondary',
+      },
+    },
+  }
+)
+---
+
+<button type='button' class={cn(buttonVariants({ variant }))}>
+  <slot />
+</button>
