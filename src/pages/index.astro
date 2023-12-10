@@ -1,12 +1,13 @@
 ---
 import Layout from '@/layouts/Layout.astro'
-import Navbar from '@/components/Navbar.astro'
-import Hero from '@/components/Hero.astro'
+// import Navbar from '@/components/Navbar.astro'
+// import Hero from '@/components/Hero.astro'
+import { Hero } from '@/components/Hero'
 ---
 
 <Layout title='Welcome to Astro.'>
-  <main>
-    <Navbar />
-    <Hero />
-  </main>
+  <!-- <main> -->
+  <!-- <Navbar /> -->
+  <Hero client:load />
+  <!-- </main> -->
 </Layout>

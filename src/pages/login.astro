@@ -1,5 +1,5 @@
 ---
-import '@/styles/globals.css'
+import Layout from '@/layouts/Layout.astro'
 import LoginForm from '@/components/LoginForm.astro'
 
 const { cookies, redirect } = Astro
@@ -12,4 +12,6 @@ if (accessToken && refreshToken) {
 }
 ---
 
-<LoginForm />
+<Layout title='Login'>
+  <LoginForm />
+</Layout>
