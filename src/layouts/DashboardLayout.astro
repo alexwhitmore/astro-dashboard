@@ -1,0 +1,28 @@
+---
+import '@/styles/globals.css'
+import DashboardStaticSidebar from '@/components/DashboardStaticSidebar.astro'
+import { DashboardFlyoutMenu } from '@/components/DashboardFlyoutMenu'
+import { navigation, teams } from '@/config/dashboard'
+const path = Astro.url.pathname
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class='dark'>
+    <DashboardStaticSidebar navigation={navigation} teams={teams} />
+    <DashboardFlyoutMenu client:load path={path} />
+    <div class='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+      <slot />
+    </div>
+  </body>
+</html>
