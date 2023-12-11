@@ -12,7 +12,7 @@ import { cn } from '@/lib/utils'
 
   <div class='mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]'>
     <div class='px-6 py-12 shadow sm:rounded-lg sm:px-12'>
-      <form class='space-y-6' action='/api/auth/register' method='POST'>
+      <form class='space-y-6' action='/api/auth/login' method='POST'>
         <div>
           <label for='email' class='block text-sm font-medium leading-6'>Email address</label>
           <div class='mt-2'>
@@ -22,8 +22,7 @@ import { cn } from '@/lib/utils'
               type='email'
               autocomplete='email'
               placeholder='johndoe@gmail.com'
-              required
-              class='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-border placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6'
+              class='block bg-background w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-border placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6'
             />
           </div>
         </div>
@@ -35,9 +34,9 @@ import { cn } from '@/lib/utils'
               id='password'
               name='password'
               type='password'
+              placeholder='••••••••'
               autocomplete='current-password'
-              required
-              class='block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-border placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6'
+              class='block bg-background w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-border placeholder:text-muted-foreground focus:ring-2 focus:ring-inset focus:ring-primary sm:text-sm sm:leading-6'
             />
           </div>
         </div>
@@ -74,32 +73,34 @@ import { cn } from '@/lib/utils'
         </div>
 
         <div class='mt-6 grid grid-cols-2 gap-4'>
-          <a
-            href='#'
-            class={cn(
-              buttonVariants({ variant: 'secondary' }),
-              'flex items-center w-full justify-center gap-3 bg-foreground/90 text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/90 hover:bg-foreground/80'
-            )}
+          <button
+            value='github'
+            name='provider'
+            type='submit'
+            formaction='/api/auth/login'
+            class={cn(buttonVariants({ variant: 'secondary' }), 'w-full flex justify-center')}
           >
-            <Icons.Google className='fill-background h-5 w-5' />
-          </a>
+            <Icons.Google className='fill-foreground h-5 w-5' />
+          </button>
 
-          <a
-            href='#'
-            class={cn(
-              buttonVariants({ variant: 'secondary' }),
-              'flex itesm-center w-full justify-center gap-3 bg-foreground/90 text-background focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground/90 hover:bg-foreground/80'
-            )}
-          >
-            <Icons.GitHub className='h-5 w-5' />
-          </a>
+          <form action='/api/auth/register' method='get'>
+            <button
+              value='github'
+              name='provider'
+              type='submit'
+              formaction='/api/auth/login'
+              class={cn(buttonVariants({ variant: 'secondary' }), 'w-full flex justify-center')}
+            >
+              <Icons.GitHub className='h-5 w-5 text-foreground' />
+            </button>
+          </form>
         </div>
       </div>
-    </div>
 
-    <p class='mt-10 text-center text-sm text-muted-foreground'>
-      Already a member?
-      <a href='/login' class='font-semibold leading-6 text-primary hover:text-primary/90'>Sign in here!</a>
-    </p>
+      <p class='mt-10 text-center text-sm text-muted-foreground'>
+        Already a member?
+        <a href='/login' class='font-semibold leading-6 text-primary hover:text-primary/90'>Sign in here!</a>
+      </p>
+    </div>
   </div>
 </div>
