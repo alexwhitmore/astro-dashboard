@@ -117,11 +117,16 @@ export function DashboardFlyout({ sidebarOpen = false, setSidebarOpen, path }: D
                     </li>
                     <li className='mt-auto'>
                       <a
-                        href='#'
-                        className='group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 hover:bg-secondary'>
+                        href='/dashboard/settings'
+                        className={cn(
+                          path === '/dashboard/settings' ? 'bg-secondary' : 'hover:bg-secondary',
+                          'group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6'
+                        )}>
                         <Icons.Settings
-                          className='h-6 w-6 shrink-0 text-muted-foreground group-hover:text-primary'
-                          aria-hidden='true'
+                          className={cn(
+                            path === '/dashboard/settings' ? 'text-primary' : 'text-muted-foreground',
+                            'h-6 w-6 shrink-0 group-hover:text-primary'
+                          )}
                         />
                         Settings
                       </a>
