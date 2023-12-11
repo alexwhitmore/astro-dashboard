@@ -43,16 +43,25 @@ export const Icons = {
   Calendar: ({ ...props }) => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      fill='none'
+      width='24'
+      height='24'
       viewBox='0 0 24 24'
-      stroke-width='1.5'
+      fill='none'
       stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       {...props}>
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5'
-      />
+      <rect width='18' height='18' x='3' y='4' rx='2' ry='2' />
+      <line x1='16' x2='16' y1='2' y2='6' />
+      <line x1='8' x2='8' y1='2' y2='6' />
+      <line x1='3' x2='21' y1='10' y2='10' />
+      <path d='M8 14h.01' />
+      <path d='M12 14h.01' />
+      <path d='M16 14h.01' />
+      <path d='M8 18h.01' />
+      <path d='M12 18h.01' />
+      <path d='M16 18h.01' />
     </svg>
   ),
   PieChart: ({ ...props }) => (
@@ -86,61 +95,68 @@ export const Icons = {
   Document: ({ ...props }) => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      fill='none'
+      width='24'
+      height='24'
       viewBox='0 0 24 24'
-      strokeWidth='1.5'
+      fill='none'
       stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       {...props}>
-      <path
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        d='M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75'
-      />
+      <path d='M15.5 2H8.6c-.4 0-.8.2-1.1.5-.3.3-.5.7-.5 1.1v12.8c0 .4.2.8.5 1.1.3.3.7.5 1.1.5h9.8c.4 0 .8-.2 1.1-.5.3-.3.5-.7.5-1.1V6.5L15.5 2z' />
+      <path d='M3 7.6v12.8c0 .4.2.8.5 1.1.3.3.7.5 1.1.5h9.8' />
+      <path d='M15 2v5h5' />
     </svg>
   ),
   Folder: ({ ...props }) => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      fill='none'
+      width='24'
+      height='24'
       viewBox='0 0 24 24'
-      stroke-width='1.5'
+      fill='none'
       stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       {...props}>
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z'
-      />
+      <path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' />
+      <path d='M2 10h20' />
     </svg>
   ),
   Home: ({ ...props }) => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      fill='none'
+      width='24'
+      height='24'
       viewBox='0 0 24 24'
-      strokeWidth='1.5'
+      fill='none'
       stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       {...props}>
-      <path
-        strokeLinecap='round'
-        strokeLinejoin='round'
-        d='M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25'
-      />
+      <path d='m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' />
+      <polyline points='9 22 9 12 15 12 15 22' />
     </svg>
   ),
   Users: ({ ...props }) => (
     <svg
       xmlns='http://www.w3.org/2000/svg'
-      fill='none'
+      width='24'
+      height='24'
       viewBox='0 0 24 24'
-      stroke-width='1.5'
+      fill='none'
       stroke='currentColor'
+      strokeWidth='2'
+      strokeLinecap='round'
+      strokeLinejoin='round'
       {...props}>
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z'
-      />
+      <path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2' />
+      <circle cx='9' cy='7' r='4' />
+      <path d='M22 21v-2a4 4 0 0 0-3-3.87' />
+      <path d='M16 3.13a4 4 0 0 1 0 7.75' />
     </svg>
   ),
   X: ({ ...props }) => (
