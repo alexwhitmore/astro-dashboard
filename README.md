@@ -1,6 +1,6 @@
 # Astro Dashboard Starter
 
-<img width="1241" alt="Screenshot 2023-12-10 at 8 00 07 PM" src="https://github.com/alexwhitmore/astro-dashboard/assets/57722812/6e4e9ad2-54ea-4b4a-9b52-073a3fc6dcdc">
+<img width="1429" alt="Screenshot 2023-12-10 at 10 57 32 PM" src="https://github.com/alexwhitmore/astro-dashboard/assets/57722812/b997e387-b60c-4405-8e36-302ff2ec1cd5">
 
 An open source dashboard project using Astro with API endpoints, Tailwind, and Supabase.
 
