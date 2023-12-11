@@ -63,7 +63,7 @@ export function PieChart() {
           data={totalSalesByCategory}
           category='sales'
           index='name'
-          valueFormatter={numberFormatter}
+          valueFormatter={valueFormatter}
           colors={['slate', 'violet', 'indigo', 'rose', 'cyan', 'amber', 'green']}
         />
       </Card>
