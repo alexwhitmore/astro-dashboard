@@ -46,6 +46,7 @@ npm run dev
 | TailwindUI                       | Component Library            | [Docs](https://tailwindui.com/)                      |
 | HeadlessUI                       | Accessible Component Library | [Docs](https://headlessui.com/)                      |
 | React                            | UI Library                   | [Docs](https://react.dev/)                           |
+| Tremor                           | Charts UI Library            | [Docs](https://www.tremor.so/)                       |
 | Supabase                         | Database/storage/auth        | [Docs](https://supabase.com/)                        |
 | Hero Icons (switching to Lucide) | Icons                        | [Docs](https://heroicons.com/)                       |
 | Lucide Icons                     | Icons                        | [Docs](https://lucide.dev/)                          |
