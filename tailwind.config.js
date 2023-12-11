@@ -93,7 +93,7 @@ module.exports = {
             emphasis: '#d1d5db', // gray-300
           },
           border: {
-            DEFAULT: '#1f2937', // gray-800
+            DEFAULT: 'hsl(var(--border))', // gray-800
           },
           ring: {
             DEFAULT: 'hsl(var(--border))', // gray-800
@@ -108,8 +108,8 @@ module.exports = {
         },
       },
       borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
@@ -137,9 +137,9 @@ module.exports = {
         'dark-tremor-dropdown': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
       },
       borderRadius: {
-        'tremor-small': '0.375rem',
-        'tremor-default': '0.5rem',
-        'tremor-full': '9999px',
+        'tremor-small': 'calc(var(--radius) - 4px)',
+        'tremor-default': `calc(var(--radius) - 2px)`,
+        'tremor-full': 'var(--radius)',
       },
       fontSize: {
         'tremor-label': ['0.75rem'],
