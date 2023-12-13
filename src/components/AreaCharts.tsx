@@ -48,6 +48,7 @@ export function AreaCharts() {
         categories={['2023', '2022']}
         colors={['green', 'blue']}
         valueFormatter={valueFormatter}
+        yAxisWidth={60}
       />
     </Card>
   )

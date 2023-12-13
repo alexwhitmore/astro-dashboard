@@ -18,7 +18,7 @@ const { title } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class='dark'>
     <DashboardStaticSidebar navigation={navigation} teams={teams} />
     <DashboardFlyoutMenu client:load path={path} />
     <div class='mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8'>

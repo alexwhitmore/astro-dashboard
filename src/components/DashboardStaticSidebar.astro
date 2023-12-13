@@ -48,13 +48,13 @@ import type { NavigationItem, Team } from '@/types'
                     href={team.href}
                     class={cn(
                       path === team.href ? 'bg-secondary' : 'hover:bg-secondary',
-                      'group flex gap-x-3 rounded-md p-2 text-sm leading-6 cursor-not-allowed'
+                      'group flex gap-x-3 rounded-md p-2 text-sm leading-6'
                     )}>
                     <span
                       class={cn(
                         path === team.href
-                          ? 'bg-secondary text-primary'
-                          : 'text-muted-foreground border-border group-hover:border-primary',
+                          ? 'bg-secondary text-primary border-primary'
+                          : 'text-muted-foreground border-border group-hover:border-primary group-hover:text-primary',
                         'flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium'
                       )}>
                       {team.initial}
