@@ -1,7 +1,6 @@
 # Astro Dashboard Starter
 
-<img width="1428" alt="Screenshot 2023-12-10 at 11 01 49 PM" src="https://github.com/alexwhitmore/astro-dashboard/assets/57722812/4e7debc6-ee03-4b5f-8a9a-1fa96001472b">
-
+<img width="1424" alt="Screenshot 2024-04-01 at 2 36 45 PM" src="https://github.com/alexwhitmore/astro-dashboard/assets/57722812/3b450f4d-786d-48cb-b611-d5ae159c45c7">
 An open source dashboard project using Astro with API endpoints, Tailwind, and Supabase.
 
 > [!WARNING]
@@ -9,7 +8,7 @@ An open source dashboard project using Astro with API endpoints, Tailwind, and S
 
 ## Purpose
 
-Astro has recently released 4.0 and is no longer just for content heavy websites (hasn't been for a while). I want to build out a "web-like" application using as many of the features as possible to see if I can find the limits of Astro. This project will remain open source and eventually be submitted as a [theme](https://astro.build/themes/) to Astro.
+Astro has recently released 4.0 and is no longer just for content heavy websites (it hasn't been for a while). I want to build out a "web-like" application using as many of the features as possible to see if I can find the limits of Astro (I don't actually think there are any limits). This project will remain open source and eventually be submitted as a [theme](https://astro.build/themes/) to Astro.
 
 ## Getting started
 
@@ -53,6 +52,7 @@ npm run dev
 
 ## Planned Features
 
+- Task tracker, DnD (Kanban board)
 - Landing Page
 - Blog (with content collection)
 - Authentication (Email/password & OAuth)
