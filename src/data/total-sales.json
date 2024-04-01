@@ -1,0 +1,9 @@
+[
+  { "name": "United States", "sales": 20000 },
+  { "name": "United Kingdom", "sales": 10000 },
+  { "name": "Canada", "sales": 7000 },
+  { "name": "Australia", "sales": 5000 },
+  { "name": "Germany", "sales": 4000 },
+  { "name": "France", "sales": 3000 },
+  { "name": "Japan", "sales": 2000 }
+]

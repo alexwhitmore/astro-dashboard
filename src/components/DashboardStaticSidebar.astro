@@ -1,35 +1,42 @@
 ---
-const { navigation, teams } = Astro.props
-const path = Astro.url.pathname
-import { cn } from '@/lib/utils'
-import { Icons } from './Icons'
-import type { NavigationItem, Team } from '@/types'
+const { navigation, teams } = Astro.props;
+const path = Astro.url.pathname;
+import { cn } from "@/lib/utils";
+import { Icons } from "./Icons";
+import type { NavigationItem, Team } from "@/types";
 ---
 
-<div class='hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col'>
-  <div class='flex grow flex-col gap-y-5 overflow-y-auto border-r border bg-background px-6 pb-4'>
-    <div class='flex h-16 shrink-0 items-center'>
-      <Icons.Logo className='h-8 w-auto' />
+<div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
+  <div
+    class="flex flex-col px-6 pb-4 overflow-y-auto border border-r grow gap-y-5 bg-background"
+  >
+    <div class="flex items-center h-16 shrink-0">
+      <Icons.Logo className="h-8 w-auto" />
     </div>
-    <nav class='flex flex-1 flex-col'>
-      <ul role='list' class='flex flex-1 flex-col gap-y-7'>
+    <nav class="flex flex-col flex-1">
+      <ul role="list" class="flex flex-col flex-1 gap-y-7">
         <li>
-          <ul role='list' class='-mx-2 space-y-1'>
+          <ul role="list" class="-mx-2 space-y-1">
             {
               navigation.map((item: NavigationItem) => (
                 <li>
                   <a
                     href={item.href}
                     class={cn(
-                      path === item.href ? 'bg-secondary' : 'hover:bg-secondary',
-                      'group flex gap-x-3 rounded-md p-2 text-sm leading-6'
-                    )}>
+                      path === item.href
+                        ? "bg-secondary"
+                        : "hover:bg-secondary",
+                      "group flex gap-x-3 rounded-md p-2 text-sm leading-6 items-center",
+                    )}
+                  >
                     <item.icon
                       className={cn(
-                        path === item.href ? 'text-primary' : 'text-muted-secondary group-hover:text-primary',
-                        'w-6 h-6'
+                        path === item.href
+                          ? "text-primary"
+                          : "text-muted-secondary group-hover:text-primary",
+                        "w-5 h-5",
                       )}
-                      aria-hidden='true'
+                      aria-hidden="true"
                     />
                     {item.name}
                   </a>
@@ -39,48 +46,58 @@ import type { NavigationItem, Team } from '@/types'
           </ul>
         </li>
         <li>
-          <div class='text-xs font-semibold leading-6 text-muted-foreground'>Your teams</div>
-          <ul role='list' class='-mx-2 mt-2 space-y-1'>
+          <div class="text-xs font-semibold leading-6 text-muted-foreground">
+            Your teams
+          </div>
+          <ul role="list" class="mt-2 -mx-2 space-y-1">
             {
               teams.map((team: Team) => (
                 <li>
                   <a
                     href={team.href}
                     class={cn(
-                      path === team.href ? 'bg-secondary' : 'hover:bg-secondary',
-                      'group flex gap-x-3 rounded-md p-2 text-sm leading-6'
-                    )}>
+                      path === team.href
+                        ? "bg-secondary"
+                        : "hover:bg-secondary",
+                      "group flex gap-x-3 rounded-md p-2 text-sm leading-6",
+                    )}
+                  >
                     <span
                       class={cn(
                         path === team.href
-                          ? 'bg-secondary text-primary border-primary'
-                          : 'text-muted-foreground border-border group-hover:border-primary group-hover:text-primary',
-                        'flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium'
-                      )}>
+                          ? "bg-secondary text-primary border-primary"
+                          : "text-muted-foreground border-border group-hover:border-primary group-hover:text-primary",
+                        "flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border text-[0.625rem] font-medium",
+                      )}
+                    >
                       {team.initial}
                     </span>
-                    <span class='truncate'>{team.name}</span>
+                    <span class="truncate">{team.name}</span>
                   </a>
                 </li>
               ))
             }
           </ul>
         </li>
-        <li class='mt-auto'>
+        <li class="mt-auto">
           <a
-            href='/dashboard/settings'
+            href="/dashboard/settings"
             class={cn(
-              path === '/dashboard/settings' ? 'bg-secondary' : 'hover:bg-secondary',
-              'group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6'
+              path === "/dashboard/settings"
+                ? "bg-secondary"
+                : "hover:bg-secondary",
+              "group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6",
             )}
           >
             <Icons.Settings
               className={cn(
-                path === '/dashboard/settings' ? 'text-primary' : 'text-muted-foreground',
-                'h-6 w-6 shrink-0 group-hover:text-primary'
+                path === "/dashboard/settings"
+                  ? "text-primary"
+                  : "text-muted-foreground",
+                "h-6 w-6 shrink-0 group-hover:text-primary",
               )}
             />
-             Settings
+            Settings
           </a>
         </li>
       </ul>

@@ -1,0 +1,9 @@
+[
+  { "name": "Electronics", "sales": 15000 },
+  { "name": "Clothing", "sales": 12000 },
+  { "name": "Home & Garden", "sales": 8000 },
+  { "name": "Beauty & Health", "sales": 5000 },
+  { "name": "Sports & Outdoors", "sales": 4000 },
+  { "name": "Books", "sales": 3000 },
+  { "name": "Other", "sales": 2000 }
+]

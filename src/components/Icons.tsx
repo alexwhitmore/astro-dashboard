@@ -1,219 +1,264 @@
 export const Icons = {
-  Menu: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      {...props}>
-      <path stroke-linecap='round' stroke-linejoin='round' d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5' />
-    </svg>
-  ),
-  Bell: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      {...props}>
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0'
-      />
-    </svg>
-  ),
-  Search: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      {...props}>
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z'
-      />
-    </svg>
-  ),
-  Calendar: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      {...props}>
-      <rect width='18' height='18' x='3' y='4' rx='2' ry='2' />
-      <line x1='16' x2='16' y1='2' y2='6' />
-      <line x1='8' x2='8' y1='2' y2='6' />
-      <line x1='3' x2='21' y1='10' y2='10' />
-      <path d='M8 14h.01' />
-      <path d='M12 14h.01' />
-      <path d='M16 14h.01' />
-      <path d='M8 18h.01' />
-      <path d='M12 18h.01' />
-      <path d='M16 18h.01' />
-    </svg>
-  ),
-  PieChart: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      {...props}>
-      <path stroke-linecap='round' stroke-linejoin='round' d='M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z' />
-      <path stroke-linecap='round' stroke-linejoin='round' d='M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z' />
-    </svg>
-  ),
-  Settings: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      aria-hidden='true'
-      {...props}>
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z'></path>
-      <path stroke-linecap='round' stroke-linejoin='round' d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'></path>
-    </svg>
-  ),
-  Document: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      {...props}>
-      <path d='M15.5 2H8.6c-.4 0-.8.2-1.1.5-.3.3-.5.7-.5 1.1v12.8c0 .4.2.8.5 1.1.3.3.7.5 1.1.5h9.8c.4 0 .8-.2 1.1-.5.3-.3.5-.7.5-1.1V6.5L15.5 2z' />
-      <path d='M3 7.6v12.8c0 .4.2.8.5 1.1.3.3.7.5 1.1.5h9.8' />
-      <path d='M15 2v5h5' />
-    </svg>
-  ),
-  Folder: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      {...props}>
-      <path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' />
-      <path d='M2 10h20' />
-    </svg>
-  ),
-  Home: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      {...props}>
-      <path d='m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z' />
-      <polyline points='9 22 9 12 15 12 15 22' />
-    </svg>
-  ),
-  Users: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      strokeWidth='2'
-      strokeLinecap='round'
-      strokeLinejoin='round'
-      {...props}>
-      <path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2' />
-      <circle cx='9' cy='7' r='4' />
-      <path d='M22 21v-2a4 4 0 0 0-3-3.87' />
-      <path d='M16 3.13a4 4 0 0 1 0 7.75' />
-    </svg>
-  ),
-  X: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      {...props}>
-      <path stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12' />
-    </svg>
-  ),
-  ChevronDown: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      fill='none'
-      viewBox='0 0 24 24'
-      stroke-width='1.5'
-      stroke='currentColor'
-      {...props}>
-      <path stroke-linecap='round' stroke-linejoin='round' d='M19.5 8.25l-7.5 7.5-7.5-7.5' />
-    </svg>
-  ),
-  Logo: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      width='30'
-      height='30'
-      viewBox='0 0 24 24'
-      fill='none'
-      stroke='currentColor'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
-      aria-hidden='true'
-      {...props}>
-      <path d='M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41l-7.59-7.59a2.41 2.41 0 0 0-3.41 0Z'></path>
-    </svg>
-  ),
-  GitHub: ({ ...props }) => (
-    <svg fill='currentColor' viewBox='0 0 20 20' aria-hidden='true' {...props}>
-      <path
-        fill-rule='evenodd'
-        d='M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z'
-        clip-rule='evenodd'></path>
-    </svg>
-  ),
-  Google: ({ ...props }) => (
-    <svg
-      xmlns='http://www.w3.org/2000/svg'
-      height='16'
-      width='15.25'
-      viewBox='0 0 488 512'
-      aria-hidden='true'
-      {...props}>
-      <path d='M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z'></path>
-    </svg>
-  ),
-}
+	Menu: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			{...props}
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+			/>
+		</svg>
+	),
+	Bell: ({ ...props }) => (
+		<svg
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<title>Bell Icon</title>
+			<path
+				d="M8 19.5455C8.6586 21.0273 10.3784 22 12 22C13.6216 22 15.3414 21.0273 16 19.5455M18 11.1902V8C18 4.68629 15.3137 2 12 2V2C8.68629 2 6 4.68629 6 8V11.1902C6 12.0239 5.64615 12.8185 5.02647 13.3762L3.91854 14.3733C2.59604 15.5636 3.01797 17.7338 4.69009 18.3419L4.90109 18.4186C9.48681 20.0861 14.5132 20.0861 19.0989 18.4186L19.3099 18.3419C20.982 17.7338 21.404 15.5636 20.0815 14.3733L18.9735 13.3762C18.3539 12.8185 18 12.0239 18 11.1902Z"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</svg>
+	),
+	Search: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			{...props}
+		>
+			<title>Search Icon</title>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+			/>
+		</svg>
+	),
+	Calendar: ({ ...props }) => (
+		<svg
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<title>Calendar Icon</title>
+			<path
+				d="M8 1V4M16 1V4M17 8H7M11.6 22H12.4C15.7603 22 17.4405 22 18.7239 21.346C19.8529 20.7708 20.7708 19.8529 21.346 18.7239C22 17.4405 22 15.7603 22 12.4V11.6C22 8.23969 22 6.55953 21.346 5.27606C20.7708 4.14708 19.8529 3.2292 18.7239 2.65396C17.4405 2 15.7603 2 12.4 2H11.6C8.23969 2 6.55953 2 5.27606 2.65396C4.14708 3.2292 3.2292 4.14708 2.65396 5.27606C2 6.55953 2 8.23969 2 11.6V12.4C2 15.7603 2 17.4405 2.65396 18.7239C3.2292 19.8529 4.14708 20.7708 5.27606 21.346C6.55953 22 8.23969 22 11.6 22Z"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</svg>
+	),
+	PieChart: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			{...props}
+		>
+			<title>Pie Chart Icon</title>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
+			/>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
+			/>
+		</svg>
+	),
+	Settings: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			aria-hidden="true"
+			{...props}
+		>
+			<title>Settings Icon</title>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
+			/>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+			/>
+		</svg>
+	),
+	Document: ({ ...props }) => (
+		<svg
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<title>Document Icon</title>
+			<path
+				d="M14 2.5V4.80003C14 5.92013 14 6.48019 14.218 6.90801C14.4097 7.28433 14.7157 7.5903 15.092 7.78204C15.5198 8.00003 16.0799 8.00003 17.2 8.00003H19.5M9 12H15M9 16H13M20 10.3137V14C20 16.8003 20 18.2004 19.455 19.27C18.9757 20.2108 18.2108 20.9757 17.27 21.455C16.2004 22 14.8003 22 12 22V22C9.19974 22 7.79961 22 6.73005 21.455C5.78924 20.9757 5.02433 20.2108 4.54497 19.27C4 18.2004 4 16.8003 4 14V9.77817C4 7.18697 4 5.89136 4.46859 4.88663C4.96536 3.82147 5.82147 2.96536 6.88663 2.46859C7.89136 2 9.18697 2 11.7782 2V2C12.9105 2 13.4766 2 14.0113 2.11855C14.5806 2.24479 15.1235 2.46965 15.6153 2.78296C16.0772 3.07721 16.4775 3.47753 17.2782 4.27817L17.6569 4.65685C18.5216 5.52161 18.954 5.95399 19.2632 6.45858C19.5373 6.90594 19.7394 7.39366 19.8618 7.90384C20 8.47928 20 9.09076 20 10.3137Z"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</svg>
+	),
+	Folder: ({ ...props }) => (
+		<svg
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<title>Folder Icon</title>
+			<path
+				d="M2 6.8C2 5.11984 2 4.27976 2.32698 3.63803C2.6146 3.07354 3.07354 2.6146 3.63803 2.32698C4.27976 2 5.11984 2 6.8 2H8.31672C9.11834 2 9.51916 2 9.88103 2.09146C10.4791 2.24262 11.016 2.57444 11.4186 3.04174C11.6623 3.32451 11.8415 3.683 12.2 4.4V4.4C12.439 4.878 12.5585 5.11699 12.7209 5.30551C12.9894 5.61704 13.3473 5.83825 13.746 5.93902C13.9872 6 14.2544 6 14.7889 6H15.6C17.8402 6 18.9603 6 19.816 6.43597C20.5686 6.81947 21.1805 7.43139 21.564 8.18404C22 9.03968 22 10.1598 22 12.4V15.6C22 17.8402 22 18.9603 21.564 19.816C21.1805 20.5686 20.5686 21.1805 19.816 21.564C18.9603 22 17.8402 22 15.6 22H8.4C6.15979 22 5.03968 22 4.18404 21.564C3.43139 21.1805 2.81947 20.5686 2.43597 19.816C2 18.9603 2 17.8402 2 15.6V6.8Z"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</svg>
+	),
+	Home: ({ ...props }) => (
+		<svg
+			width="22"
+			height="23"
+			viewBox="0 0 22 23"
+			fill="none"
+			stroke="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<title>Home Icon</title>
+			<path
+				d="M21 17V11.845C21 10.433 21 9.72701 20.8204 9.07517C20.6613 8.49771 20.3998 7.95353 20.0483 7.46857C19.6514 6.92115 19.1001 6.48011 17.9976 5.59805L15.9976 3.99805C14.214 2.57118 13.3222 1.85774 12.3332 1.58413C11.4608 1.34279 10.5392 1.34279 9.66684 1.58413C8.67783 1.85774 7.78603 2.57118 6.00244 3.99805L4.00244 5.59805C2.89986 6.48011 2.34857 6.92115 1.95174 7.46857C1.6002 7.95353 1.33865 8.49771 1.17957 9.07517C1 9.72701 1 10.433 1 11.845V17C1 19.7614 3.23858 22 6 22C7.10457 22 8 21.1046 8 20V15.9999C8 14.3431 9.34315 12.9999 11 12.9999C12.6569 12.9999 14 14.3431 14 15.9999V20C14 21.1046 14.8954 22 16 22C18.7614 22 21 19.7614 21 17Z"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</svg>
+	),
+	Users: ({ ...props }) => (
+		<svg
+			width="24"
+			height="24"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			xmlns="http://www.w3.org/2000/svg"
+			{...props}
+		>
+			<title>Users Icon</title>
+			<path
+				d="M15 10C17.2091 10 19 8.20914 19 6C19 3.79086 17.2091 2 15 2M17 22H19.8C21.5673 22 23 20.5673 23 18.8V18.8C23 16.149 20.851 14 18.2 14H17M12 6C12 8.20914 10.2091 10 8 10C5.79086 10 4 8.20914 4 6C4 3.79086 5.79086 2 8 2C10.2091 2 12 3.79086 12 6ZM4.2 22H11.8C13.5673 22 15 20.5673 15 18.8V18.8C15 16.149 12.851 14 10.2 14H5.8C3.14903 14 1 16.149 1 18.8V18.8C1 20.5673 2.43269 22 4.2 22Z"
+				stroke-width="1.5"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</svg>
+	),
+	X: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			{...props}
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M6 18L18 6M6 6l12 12"
+			/>
+		</svg>
+	),
+	ChevronDown: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1.5"
+			stroke="currentColor"
+			{...props}
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+			/>
+		</svg>
+	),
+	Logo: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="30"
+			height="30"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			aria-hidden="true"
+			{...props}
+		>
+			<path d="M2.7 10.3a2.41 2.41 0 0 0 0 3.41l7.59 7.59a2.41 2.41 0 0 0 3.41 0l7.59-7.59a2.41 2.41 0 0 0 0-3.41l-7.59-7.59a2.41 2.41 0 0 0-3.41 0Z"></path>
+		</svg>
+	),
+	GitHub: ({ ...props }) => (
+		<svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true" {...props}>
+			<path
+				fill-rule="evenodd"
+				d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+				clip-rule="evenodd"
+			></path>
+		</svg>
+	),
+	Google: ({ ...props }) => (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="16"
+			width="15.25"
+			viewBox="0 0 488 512"
+			aria-hidden="true"
+			{...props}
+		>
+			<path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
+		</svg>
+	),
+};

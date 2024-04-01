@@ -1,28 +1,45 @@
 ---
-import '@/styles/globals.css'
-import DashboardStaticSidebar from '@/components/DashboardStaticSidebar.astro'
-import { DashboardFlyoutMenu } from '@/components/DashboardFlyoutMenu'
-import { navigation, teams } from '@/config/dashboard'
-const path = Astro.url.pathname
+import "@/styles/globals.css";
+import DashboardStaticSidebar from "@/components/DashboardStaticSidebar.astro";
+import { DashboardFlyoutMenu } from "@/components/DashboardFlyoutMenu";
+import { navigation, teams } from "@/config/dashboard";
+const path = Astro.url.pathname;
 
-const { title } = Astro.props
+const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
-    <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-    <meta name='generator' content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class='dark'>
+  <body class="dark">
     <DashboardStaticSidebar navigation={navigation} teams={teams} />
     <DashboardFlyoutMenu client:load path={path} />
-    <div class='mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8'>
+    <div class="mx-auto max-w-[85rem] px-4 sm:px-6 lg:px-8">
       <slot />
     </div>
+    <footer class="py-6 lg:pl-72 md:px-8 md:py-0">
+      <div
+        class="container flex flex-col items-center justify-between gap-4 border-t md:h-24 md:flex-row"
+      >
+        <p
+          class="text-sm leading-loose text-center text-balance text-muted-foreground md:text-left"
+        >
+          Built by <a
+            href="https://twitter.com/theAlexWhitmore"
+            class="font-medium underline underline-offset-4">theAlexWhitmore</a
+          >. The source code is available on <a
+            href="https://github.com/alexwhitmore/astro-dashboard"
+            class="font-medium underline underline-offset-4">GitHub</a
+          >.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
